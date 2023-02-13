@@ -1,0 +1,184 @@
+/* 
+*  Добавление своих стилей
+*  12.02.2023
+*/ 
+
+
+.body-home {
+   font-size: 1.8em;
+   font-family: Acrom;
+   background-image: url(./../images/bg1.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.header,
+.footer {
+   padding-top: 4rem;
+}
+
+.header,
+.nav,
+.footer {
+   background-color: rgba(51, 51, 51, .9);
+   color: #eee;
+}
+
+.header h1 {
+   font-size: 7rem;
+   text-align: center;
+   /* градиент текста */
+   background: linear-gradient(45deg, #f0945b ,  #76c564 );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.header h1 > span {
+   font-weight: 800;
+}
+
+.nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 0;
+}
+
+.nav ul > li + li {
+   margin-left: 1rem;
+}
+
+/* переопределяем цветовую гамму кнопкам */
+.nav li > .button,
+.intro p > .button,
+.footer .button {
+   margin-bottom: 0;
+   color: #f69f68;
+   transition-duration: .4s;
+}
+
+/* переопределяем цветовую гамму кнопкам */
+.nav li > .button:hover,
+.intro p > .button:hover,
+.nav li > .button:focus,
+.intro p > .button:focus,
+.footer .button:hover,
+.footer .button:focus {
+   color: rgb(51, 51, 51);
+   border-color: #f69f68;
+   background-color: #f69f68;
+}
+
+.intro p > .button {
+   font-size: 1.6rem;
+}
+
+/* псевдо-кнопка для пункта */
+.button--activ {
+   display: inline-block;
+   height: 38px;
+   padding: 0 30px;
+   text-align: center;
+   font-size: 11px;
+   font-weight: 600;
+   line-height: 38px;
+   letter-spacing: .1rem;
+   text-transform: uppercase;
+   text-decoration: none;
+   white-space: nowrap;
+   background-color: transparent;
+   border-radius: 4px;
+   cursor: pointer;
+   box-sizing: border-box;
+   color: rgb(51, 51, 51);
+   border-color: #f69f68;
+   background-color: #f69f68;
+}
+
+.content {
+   padding: 4rem 0;
+   color: rgb(51, 51, 51);
+}
+
+.intro {
+   background-color: rgba(238, 238, 238, .9);
+   padding: 2rem;
+   border-radius: 5px;
+}
+
+.intro h3,
+.intro h2 {
+   font-weight: 600;
+}
+
+footer {
+   text-align: center;
+}
+
+footer > div > p:first-of-type {
+   font-size: 4rem;
+}
+
+footer > div > address {
+   font-size: 2.5rem;
+}
+
+footer > div > p:last-of-type {
+   font-size: 1.2rem;
+}
+
+.footer .buttons-group {
+   margin-bottom: 2rem;
+}
+
+.table {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+/* переопределяем цветовую гамму */
+.table thead  th,
+.table tfoot th {
+   background-color: rgb(51, 51, 51);
+   color: #eee;
+   
+}
+
+.table th:last-child,
+.table td:last-child {
+   padding-right: 15px;
+}
+
+/* переопределяем цветовую гамму */
+.table th,
+.table td {
+   border-bottom: 1px solid rgb(51, 51, 51);
+   text-align: center;
+}
+
+input[type="time"] {
+   height: 38px;
+   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+   background-color: #fff;
+   border: 1px solid #D1D1D1;
+   border-radius: 4px;
+   box-shadow: none;
+   box-sizing: border-box;
+   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+}
+
+input[type="submit"] {
+   transition-duration: .4s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+   color: rgb(51, 51, 51);
+   border-color: #f69f68;
+   background-color: #f69f68;
+}
