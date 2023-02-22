@@ -3,10 +3,9 @@
 *  12.02.2023
 */ 
 
-
 .body-home {
    font-size: 1.8em;
-   font-family: Acrom;
+   font-family: Hi-xiaobo;
    background-image: url(./../images/bg1.jpg);
    background-position: center center;
    background-size: cover;
@@ -21,21 +20,23 @@
 .header,
 .nav,
 .footer {
-   background-color: rgba(51, 51, 51, .9);
-   color: #eee;
+   background-color: rgba(22, 22, 22, 0.9);
+   color: rgb(238, 238, 238);
 }
 
 .header h1 {
    font-size: 7rem;
    text-align: center;
    /* градиент текста */
-   background: linear-gradient(45deg, #f0945b ,  #76c564 );
+   /* background: linear-gradient(45deg, #f0945b ,  #76c564 );
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
 }
 
 .header h1 > span {
    font-weight: 800;
+   color: rgba(237, 27, 36, 1);
+   text-shadow: 0 0 10px rgba(237, 27, 36, 1);
 }
 
 .nav ul {
@@ -55,7 +56,7 @@
 .intro p > .button,
 .footer .button {
    margin-bottom: 0;
-   color: #f69f68;
+   color: rgb(238, 238, 238);
    transition-duration: .4s;
 }
 
@@ -66,9 +67,10 @@
 .intro p > .button:focus,
 .footer .button:hover,
 .footer .button:focus {
-   color: rgb(51, 51, 51);
-   border-color: #f69f68;
-   background-color: #f69f68;
+   color: rgb(238, 238, 238);
+   border-color: rgba(237, 27, 36, 1);
+   background-color: rgba(237, 27, 36, 1);
+   box-shadow: 0 0 5px rgba(237, 27, 36, 1);
 }
 
 .intro p > .button {
@@ -92,20 +94,25 @@
    border-radius: 4px;
    cursor: pointer;
    box-sizing: border-box;
-   color: rgb(51, 51, 51);
-   border-color: #f69f68;
-   background-color: #f69f68;
+   color: rgb(238, 238, 238);
+   border-color: rgba(237, 27, 36, 1);
+   background-color: rgba(237, 27, 36, 1);
+   box-shadow: 0 0 5px rgba(237, 27, 36, 1);
 }
 
 .content {
    padding: 4rem 0;
-   color: rgb(51, 51, 51);
+   color: rgb(238, 238, 238);
 }
 
 .intro {
-   background-color: rgba(238, 238, 238, .9);
+   background-color: rgba(22, 22, 22, 0.9);
    padding: 2rem;
    border-radius: 5px;
+}
+
+.intro h2 {
+   color: rgba(237, 27, 36, 1);
 }
 
 .intro h3,
@@ -123,6 +130,7 @@ footer > div > p:first-of-type {
 
 footer > div > address {
    font-size: 2.5rem;
+   color: rgba(237, 27, 36, 1);
 }
 
 footer > div > p:last-of-type {
@@ -141,7 +149,7 @@ footer > div > p:last-of-type {
 /* переопределяем цветовую гамму */
 .table thead  th,
 .table tfoot th {
-   background-color: rgb(51, 51, 51);
+   background-color: rgba(22, 22, 22, 1);
    color: #eee;
    
 }
@@ -178,7 +186,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-   color: rgb(51, 51, 51);
-   border-color: #f69f68;
-   background-color: #f69f68;
+   color: rgb(238, 238, 238);
+   border-color: rgba(237, 27, 36, 1);
+   background-color: rgba(237, 27, 36, 1);
+   box-shadow: 0 0 5px rgba(237, 27, 36, 1);
 }
