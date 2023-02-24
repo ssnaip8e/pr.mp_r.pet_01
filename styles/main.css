@@ -1,8 +1,12 @@
 /* 
 *  12.02.2023
 */ 
+html {
+   width: 100%;
+}
 
 .body-home {
+   width: 100%;
    font-size: 1.8em;
    font-family: Acrom;
    background-image: url(./../images/bg1.jpg);
@@ -79,8 +83,6 @@
 
 /* псевдо-кнопка для пункта */
 .button--activ {
-   display: inline-block;
-   height: 38px;
    padding: 0 30px;
    text-align: center;
    font-size: 11px;
@@ -93,7 +95,6 @@
    background-color: transparent;
    border-radius: 4px;
    cursor: pointer;
-   box-sizing: border-box;
    color: rgb(238, 238, 238);
    border-color: rgba(237, 27, 36, 1);
    background-color: rgba(237, 27, 36, 1);
@@ -101,6 +102,7 @@
 }
 
 .content {
+   width: 100%;
    padding: 4rem 0;
    color: rgb(238, 238, 238);
 }
@@ -121,7 +123,7 @@
    margin-left: 4rem
 }
 
-.content .intro h2:last-of-type {
+.content .intro .tea {
    margin-top: 3rem;
 }
 .intro {
@@ -186,6 +188,43 @@ th[colspan] {
    text-align: center;
 }
 
+.content .icon-face {
+   width: 200px;
+   height: 200px;
+   background-image: url(./../images/icons2.png);
+   background-repeat: no-repeat;
+   background-position: -950px -255px;
+   margin-right: 150px;
+   filter: drop-shadow(0 0 5px rgba(237, 27, 36, 1));
+}
+
+.content .icon {
+   width: 200px;
+   height: 200px;
+   background-image: url(./../images/icons2.png);
+   background-repeat: no-repeat;
+   filter: drop-shadow(0 0 5px rgba(237, 27, 36, 1));
+}
+
+.content .i-1 {
+   background-position: -280px -260px;
+   margin-right: 2rem;
+}
+
+.content .i-2 {
+   background-position: -55px -260px;
+   margin-right: 2rem;
+}
+
+.content .i-3 {
+   background-position: -277px -45px;
+   margin-right: 2rem;
+}
+
+.content .mt-5 {
+   margin-top: 5rem;
+}
+
 input[type="time"] {
    color: rgba(237, 27, 36, 1);
    height: 38px;
@@ -201,7 +240,8 @@ input[type="time"] {
 
 }
 
-input {
+input,
+select {
    color: rgba(237, 27, 36, 1);
    font-weight: 600;
 }
@@ -217,4 +257,18 @@ input[type="submit"]:focus {
    border-color: rgba(237, 27, 36, 1);
    background-color: rgba(237, 27, 36, 1);
    box-shadow: 0 0 5px rgba(237, 27, 36, 1);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+   margin-right: 5px;
+}
+
+fieldset {
+   padding: 1rem 0 1rem 1.5rem;
+   border: 1px solid #eee;
+}
+
+select {
+   height: auto;
 }
