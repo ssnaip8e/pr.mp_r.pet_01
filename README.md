@@ -1,5 +1,10 @@
-# project.site.sushi-bar
+# project.multi-page(responsive).draft
 
-# В разработке с применением sass/bem
-
-  
++ responsive
++ bem-naming
++ bem-filles-structures
++ sass/pug
++ forms submit
++ pictures modifs
++ aria-*
++ more contents
