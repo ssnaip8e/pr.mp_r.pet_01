@@ -1,4 +1,6 @@
-# project.multi-page(responsive).draft
+> project.multi-page(responsive)
+
+## В разработке
 
 + responsive
 + bem-naming
